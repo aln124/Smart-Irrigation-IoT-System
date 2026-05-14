@@ -61,8 +61,9 @@ target_include_directories(ProiectSM PRIVATE
 
 target_link_libraries(ProiectSM
     pico_stdlib
-    pico_cyw43_arch_lwip_threadsafe_background
+    pico_cyw43_arch_lwip_poll
     hardware_i2c
+    hardware_adc
 )
 
 pico_add_extra_outputs(ProiectSM)
